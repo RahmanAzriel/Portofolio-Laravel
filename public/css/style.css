@@ -1,0 +1,508 @@
+*{
+    font-family: 'EB Garamond', serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+body {
+background-color: white;
+background-size: cover;
+}
+main {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+nav {
+    padding: 10px 7%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 90%;
+    z-index: 1;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: sticky;
+}
+nav li {
+    display: inline-block;
+}
+nav .logos-navos {
+    width: 70px;
+    height: 50px;
+    padding-top: 10px;
+}
+.listos-navos li a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 35px;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listos-navos li a::after {
+    width: 0%;
+    height: 3px;
+    content: '';
+    background: linear-gradient(270deg, #ffb600, #d79a00, #b58305, #986e07);
+    position: absolute;
+    bottom: -6px;
+    transition:all 0.4s;
+}
+.listos-navos li a:hover::after {
+    width: 100%;
+}
+.name-ani  {
+    background: linear-gradient(270deg, #ffb600, #d79a00, #b58305, #986e07);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.names-dilos {
+    font-size: 28px;
+    margin: 14% 7% 14% 7%;
+    font-weight: bold;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 25%;
+}
+.baten-xixi {
+    padding: 10px 0px;
+    position: relative;
+    bottom: 0px;
+    border: 2px solid black;
+    border-radius: 35px;
+    background-color:white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin: 12px 0px;
+}
+.baten-xixi a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 35px;
+    border-radius: 35px;
+    transition: all 0.3s;
+}
+.baten-xixi a:hover {
+    color: white;
+}
+.baten-xixi:hover {
+    transform: scale(1.1);
+    background-color: #d79a00;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #d79a00 ;
+}
+
+#satuan-kesatuan {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.werck1 {
+    position: relative;
+    top: 240px;
+    left: 0px;
+    width: 450px;
+    height: 230px;
+}
+main {
+    width: 100%;
+    background-color: white;
+}
+#satu-kesatuan {
+    width: 100%;
+    height: 100vh;
+}
+
+#skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.itiels {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(243, 241, 241);
+    margin: 0;
+    border-radius: 0px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+.plain-skil {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 70px;
+    font-size: 17px;
+}
+.plain-skil article {
+    width: 900px;
+}
+.plain-skil article .jekils {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.plain-skil article h1 {
+    color: #d79a00;
+}
+#satuan-kesatuan .abot {
+    width: 500px;
+    margin: 14% 7%;
+    font-size: 17px ;
+}
+.carti-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% 6% 0% 6%;
+}
+.carti-box .carti{
+    background-color: rgb(175, 175, 175);
+    justify-content: center;
+    color:black;
+    text-align: center;
+    padding: 50px 30px;
+    margin: 3.5% 0%;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: all 0.3s;
+    border: 12px solid rgb(206, 206, 206);
+}
+.carti-box .carti .lol1 {
+    color: rgb(0, 0, 0);
+    width: 240px;
+    height: 300px;
+}
+.carti-box .carti:hover {
+    transform: scale(1.1);
+}
+.under-carti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0% 5%;
+    
+}
+.under-carti .ancart {
+    width: 240px;
+    height: 60px;
+    font-size: 26px;
+    text-align: center;
+}
+.under-carti .ancart h2{
+    color: #b58305;
+}
+#certi {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    border-radius: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.certi-first {
+    display: flex;
+    flex-wrap: wrap;
+}
+.certi-card {
+    width: 500px;
+    font-size: 12px;
+    background-color: rgb(184, 184, 184);
+    display: block;
+    text-align: start;
+    color: black;
+    padding: 5px 10px 70px 10px;
+    margin: 2% 6%;
+    border-radius: 10px;
+    line-height: 1.9;
+    transition: all 0.3s ;
+}
+.certi-card:hover {
+    transform: scale(1.06);
+}
+.certi-card .for-certi-1 {
+    width: 100%;
+}
+.deretan-certi {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0;
+    margin: 0% 5%;
+}
+.certi-ket {
+    margin: 3% 2%;
+    width: 700px;
+}
+.cerrrti {
+    display: flex;
+    justify-content: center;
+}
+.ket-at-cer {
+    margin: 10px 10px;
+}
+.keseluruhan-certi {
+    display: flex;
+    justify-content: center;
+}
+
+.col-certi {
+    width: 240px;
+}
+.column-card {
+    display: flex;
+    background-color: rgb(197, 196, 196) ;
+    width: 85%;
+    margin: 2% 1%;
+    padding: 10px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+.column-card:hover {
+    transform: scale(1.05);
+}
+.ket-card-column {
+    text-align: left;
+    line-height: 1.8;
+    color: black;
+    font-size: 12px;
+    margin: 2%;
+}
+.certi-column {
+    padding: 0;
+    margin: 0;
+}
+#my-project {
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(243, 241, 241);
+    align-items: center;
+}
+.proj {
+    display: flex;
+    justify-content: center;
+}
+.proj-ket {
+    text-align: center;
+    width: 700px;
+    margin: 2% 5%;
+}
+.img-ket-pro {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin: 2% 3% 0% 3%;
+}
+.isian-ket {
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    transition: all 0.3s ;
+    filter: brightness(0.7);
+    padding: 0;
+    width: 100%;
+    margin: 1% 0.7%;
+}
+.ket-mypro {
+    margin: 20px 0px;
+}
+.isian-ket:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+    filter: brightness(1);
+}
+.woik-ket .pro-foto {
+    width: 100%;
+    border-radius: 10px;
+}
+#contact-wrap {
+    width: 100%;
+    height: 95vh;
+    padding: 0;
+    margin: 0;
+}
+.con-items {
+    margin: 3% 7% ;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+}
+.con-ket {
+    display: flex;
+    justify-content: center;
+}
+.con-ket-kes {
+    text-align: center;
+    width: 700px;
+    margin: 3% 5%;
+}
+.con-ket-kes h1{
+    color: #d79a00;
+}
+.con-image .Con-face {
+    width: 430px;
+}
+.contact-list {
+    margin: 2% 3%;
+    padding: 0;
+    align-items: center;
+}
+.contact-list-items {
+    margin: 3% 0%;
+    display: flex;
+}
+.fak-gue {
+    display: flex;
+}
+.con-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+.isian-items {
+    margin: 2% 3%;
+}
+#fname {
+    height: 35px;
+    width: 500px;
+    font-size: 20px;
+    padding: 3px 15px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 35px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+#fname:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    border: 1px solid rgb(82, 82, 82);
+}
+#Emails {
+    height: 35px;
+    width: 500px;
+    font-size: 20px;
+    padding: 3px 15px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 35px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+#Emails:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    border: 1px solid rgb(82, 82, 82);
+}
+.isian-items h2{
+    margin-left: 15px;
+    font-size: 20px;
+}
+.contact-column2 {
+    margin-left: 30px;
+}
+#Lname {
+    height: 35px;
+    width: 500px;
+    font-size: 20px;
+    padding: 3px 15px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 35px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+#Lname:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    border: 1px solid rgb(82, 82, 82);
+}
+#Nambar {
+    height: 35px;
+    width: 500px;
+    font-size: 20px;
+    padding: 3px 15px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 35px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+#Nambar:hover {
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    border: 1px solid rgb(82, 82, 82);
+}
+.sambit button{
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    margin-left: 13px;
+    font-weight: bold;
+    transition: all 0.3s ;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.sambit button:hover {
+    background-color: #d79a00;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+footer {
+    border-top: 2px solid black;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 7px;
+}
